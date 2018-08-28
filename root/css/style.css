@@ -124,8 +124,8 @@ header {
     z-index: 9999;
     color: #dddddd;
     text-align: center;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 50px;
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
@@ -171,7 +171,7 @@ header {
     top: 25%;
     left: 52%;
     transform: translate(-50%, -50%);
-    animation: scrollDown 1s infinite linear;
+    animation: scrollDown 1.5s infinite ease-in-out;
 }
 
 @keyframes scrollDown {
@@ -310,7 +310,11 @@ h3 {
 /* ------SECTION - 4  Cennik ---------- */
 
 .sec-4 {
-    background: #080808;
+    background-image: url('../img/price-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .sec-4 h3 {
@@ -362,7 +366,7 @@ h3 {
     left: 0;
     width: 400px;
     height: 500px;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .8);
 }
 
 .card:hover {
@@ -376,11 +380,26 @@ h3 {
     background: #ffffff;
 }
 
+.card ul {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
 .card ul li {
     list-style-type: none;
     color: #dddddd;
     padding: 10px;
+    width: 300px;
     font-family: 'Montserrat';
+}
+
+.card ul li span {
+    display: block;
+    width: 200px;
+    padding: 8px 0;
+    margin: 0;
 }
 
 .card h4 {
@@ -469,7 +488,7 @@ h3 {
 .contact ul {
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: #dddddd;
     list-style-type: none;
@@ -477,12 +496,15 @@ h3 {
 }
 
 .contact ul li {
-    padding-top: 8px;
+    padding: 8px 0 8px 0;
 }
 
-.contact ul li span {
+.contact ul li a {
+    display: block;
     color: red;
     font-size: .8em;
+    width: 380px;
+    text-decoration: none;
 }
 
 /* -------- FOOTER ------------ */

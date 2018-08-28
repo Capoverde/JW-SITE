@@ -11,37 +11,37 @@ $(function () {
         }
     });
     // smooth scrol to sections
-    $('li:nth-child(1)').on('click', function (e) {
+    $('nav li:nth-child(1)').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $('.sec-1').offset().top - 40
         }, 1000);
     });
-    $('li:nth-child(2)').on('click', function (e) {
+    $('nav li:nth-child(2)').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $('.sec-2').offset().top - 40
         }, 1000);
     });
-    $('li:nth-child(3)').on('click', function (e) {
+    $('nav li:nth-child(3)').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $('.sec-3').offset().top - 40
         }, 1000);
     });
-    $('li:nth-child(4)').on('click', function (e) {
+    $('nav li:nth-child(4)').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $('.sec-4').offset().top - 40
         }, 1000);
     });
-    $('li:nth-child(5)').on('click', function (e) {
+    $('nav li:nth-child(5)').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $('.sec-5').offset().top - 40
         }, 1000);
     });
-    $('li:nth-child(6)').on('click', function (e) {
+    $('nav li:nth-child(6)').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $('.sec-6').offset().top - 40
@@ -62,5 +62,7 @@ $(function () {
             scrollTop: 0
         }, 1000);
     })
+
+
 
 }); //Main function
