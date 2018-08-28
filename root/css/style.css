@@ -112,11 +112,40 @@ header {
     background: var(--head-bg);
 }
 
+#TOP {
+    position: fixed;
+    right: 6%;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(230, 17, 17, 0.486);
+    visibility: hidden;
+    z-index: 9999;
+    color: #dddddd;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+}
+
+#TOP.visible {
+    visibility: visible;
+}
+
+#TOP:hover {
+    background-color: var(--hero-c);
+}
+
 #h-me {
     position: absolute;
     top: 0;
     right: 0;
     height: 100vh;
+    width: 50%;
 }
 
 .scroll-down {
@@ -174,6 +203,7 @@ header {
 /* ------ h1, h2 ----------- */
 
 h1 {
+    line-height: 100px;
     position: absolute;
     top: 40%;
     left: 34%;
@@ -188,19 +218,30 @@ hr {
     height: 2px;
     width: 28%;
     position: absolute;
-    top: 51%;
-    left: 36.5%;
+    top: 53%;
+    left: 34.5%;
     transform: translate(-50%, -50%);
     background-color: red;
     border-style: none;
 }
 
+.sechr {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, red, transarent);
+}
+
 h2 {
     position: absolute;
-    top: 57%;
-    left: 37%;
+    top: 60%;
+    left: 35%;
     transform: translate(-50%, -50%);
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
     font-family: 'Cinzel';
     color: var(--h-c);
@@ -209,9 +250,10 @@ h2 {
 /* ------SECTION - 1 ---------- */
 
 section {
+    position: relative;
     width: 100%;
     min-height: 30vh;
-    border-bottom: 1px solid red;
+    /* border-bottom: 1px solid red; */
 }
 
 .sec-1 {
@@ -219,7 +261,7 @@ section {
 }
 
 section article {
-    margin: 20px;
+    margin: 30px;
 }
 
 section p {
@@ -446,7 +488,17 @@ h3 {
 /* -------- FOOTER ------------ */
 
 footer {
-    background: #000;
+    height: 40vh;
+    background-image: url('../img/jw-footer-bg.jpg');
+    background-position: center 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-filter {
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.904);
 }
 
 /* ************************************************************************ | RWD | *********************
