@@ -6,6 +6,7 @@ $(function () {
             $("nav").addClass("shadow");
         } else {
             $("nav").css("background", "transparent");
+            $("nav").removeClass("shadow");
         }
     })
 
