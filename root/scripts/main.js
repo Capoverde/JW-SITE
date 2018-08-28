@@ -1,9 +1,9 @@
 $(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        if (scroll > 300) {
+        if (scroll > 200) {
             $("nav").css("background", "black");
-            $("nav").addClass("box-shadow", "");
+            $("nav").addClass("shadow");
         } else {
             $("nav").css("background", "transparent");
         }
