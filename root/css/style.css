@@ -315,6 +315,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 .sec-4 h3 {
@@ -349,6 +350,7 @@ h3 {
 .card {
     position: relative;
     margin: 50px 0;
+    padding: 0;
     width: 400px;
     height: 500px;
     border-radius: 5px;
@@ -364,6 +366,7 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
+    padding: 0;
     width: 400px;
     height: 500px;
     background: rgba(0, 0, 0, .8);
@@ -377,12 +380,12 @@ h3 {
     position: absolute;
     content: '';
     width: 200px;
-    left: -200px;
-    height: 500px;
+    left: -270px;
+    height: 570px;
     background: #ffffff;
     opacity: .3;
     transition: .5s;
-    /* transform: skew(-25deg); */
+    transform: skew(-10deg);
 }
 
 .card:hover::before {
