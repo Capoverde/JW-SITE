@@ -469,7 +469,34 @@ h3 {
     background-position: center;
 }
 
-/* ------SECTION - 5 ---------- */
+/* ------SECTION - 5  Wycena ---------- */
+
+.break {
+    width: 100%;
+    height: 10vh;
+    background: #161616;
+}
+
+.break h3 {
+    text-align: center;
+    line-height: 10vh;
+}
+
+.sec-5 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/wycen-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sec-5 form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* ------SECTION - 6  Kontakt ---------- */
 
