@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Sunflower:300');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
 *,
 *::before,
 *::after {
@@ -472,30 +473,151 @@ h3 {
 /* ------SECTION - 5  Wycena ---------- */
 
 .break {
+    position: relative;
     width: 100%;
     height: 10vh;
-    background: #161616;
+}
+
+.break span:nth-child(1) {
+    display: block;
+    width: 100%;
+    height: 2vh;
+    background: darkred;
 }
 
 .break h3 {
     text-align: center;
-    line-height: 10vh;
+    line-height: 6vh;
+    padding-bottom: 10px;
+    color: darkred;
+    background: #ecb309;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.break span:nth-of-type(2) {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    height: 2vh;
+    background: darkred;
 }
 
 .sec-5 {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background-image: url('../img/wycen-bg.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 20px;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec-5 .filter-div {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .sec-5 form {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: auto;
+}
+
+.sec-5 form label {
+    color: #dddddd;
+    font-family: 'Quicksand';
+    font-weight: 300;
+}
+
+.sec-5 form input {
+    padding: 10px 15px 5px;
+    width: 400px;
+    background: transparent;
+    border-style: none;
+    border-bottom: 1px solid #dddddd;
+    margin: 0px 20px 10px;
+    color: #dddddd;
+}
+
+.sec-5 form input::placeholder {
+    color: #dddddd;
+    font-family: 'Quicksand';
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.sec-5 form input:focus {
+    outline-color: red;
+}
+
+#myFile1,
+#myFile2 {
+    border-style: none;
+    color: red;
+}
+
+#translate,
+#language {
+    width: 200px;
+}
+
+#translate {
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+#language {
+    margin-left: 58px;
+}
+
+#choose1 {
+    background: transparent;
+}
+
+textarea {
+    background: transparent;
+    min-width: 900px;
+    min-height: 300px;
+    padding: 20px;
+    font-size: 20f px;
+    color: #dddddd;
+    font-family: 'Quicksand';
+    overflow: scroll;
+    outline-color: var(--hero-c);
+}
+
+span {
+    content: "\2731";
+    color: red;
+    font-size: 9px;
+}
+
+#send-btn {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background: transparent;
+    color: #dddddd;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 28px;
+    border: 2px solid #dddddd;
+    outline: none;
+}
+
+#send-btn:hover {
+    color: var(--hero-c);
+    border: 2px solid var(--hero-c);
+    transform: scale(.9) translate(-50%, -50%);
 }
 
 /* ------SECTION - 6  Kontakt ---------- */

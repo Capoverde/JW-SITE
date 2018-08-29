@@ -38,7 +38,7 @@ $(function () {
     $('nav li:nth-child(5)').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $('.sec-5').offset().top - 40
+            scrollTop: $('.break').offset().top - 40
         }, 1000);
     });
     $('nav li:nth-child(6)').on('click', function (e) {

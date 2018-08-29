@@ -176,17 +176,53 @@
         </div>
     </section>
     <div class="break">
+        <span></span>
         <h3>Zamów szybką wycenę</h3>
+        <span></span>
     </div>
     <section id="Wycena" class="sec sec-5">
-        <form action="">
-            <input type="text" placeholder="Imię i Nazwisko">
-            <input type="text" placeholder="Firma">
-            <br>
-            <input type="text" placeholder="e-mail">
-            <input type="text" placeholder="telefon">
-            <br>
-        </form>
+        <div class="filter-div">
+            <form action="">
+                <input type="text" placeholder="Imię i Nazwisko &#10033;">
+                <input type="text" placeholder="Firma">
+                <br>
+                <input type="email" placeholder="e-mail  &#10033;">
+                <input type="phone" placeholder="telefon  &#10033;">
+                <br>
+                <label>Tłumaczenie
+                    <sup>
+                        <span>&#10033;</span>
+                    </sup>
+                </label>
+                <select id="translate" name="przysiegle-nieprzysiegle">
+                    <option id="choose1" value="choose">Wybierz</option>
+                    <option value="przysiegle">Przysięgłe</option>
+                    <option value="nieprzysiegle">Nieprzysięgłe</option>
+                </select>
+                <br>
+                <label>Język
+                    <sup>
+                        <span>&#10033;</span>
+                    </sup>
+
+                </label>
+                <select id="language" name="zpolnahiszp-zhiszpnapol">
+                    <option id="choose2" value="choose">Wybierz</option>
+                    <option id="hispToEng" value="hispToEng">z hiszpańskiego na polski</option>
+                    <option id="polTohisp" value="polToHisp">z polskiego na hiszpański</option>
+                </select>
+                <br>
+                <label for="">Załącz plik nr 1</label>
+                <input type="file" id="myFile1" placeholder="nie wybrano pliku">
+                <br>
+                <label for="">Załącz plik nr 2</label>
+
+                <input type="file" id="myFile2" placeholder="nie wybrano pliku">
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Opis  &#10033;"></textarea>
+            </form>
+            <input id="send-btn" type="submit">
+        </div>
 
     </section>
     <section id="Kontakt" class="sec sec-6">
