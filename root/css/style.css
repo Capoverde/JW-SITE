@@ -62,6 +62,7 @@ nav.shadow {
 
 nav ul {
     float: right;
+    margin-right: 70px;
 }
 
 nav ul li {
@@ -704,16 +705,41 @@ footer {
     background-color: rgba(0, 0, 0, 0.904);
 }
 
-/* ************************************************************************ | RWD | *********************
-************************************************ */
+/* ********************************************* | RWD | ********************************************************************* */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 990px) {
     #h-me {
-        width: 100%;
-        height: 100vh;
+        min-width: 100%;
+        min-height: 100vh;
     }
-    nav ul {
+    nav ul li {
         display: none;
+        transition: 1s;
+    }
+    nav.show {
+        z-index: 100000;
+        min-width: 100vw;
+        background-color: #000;
+    }
+    nav.show ul {
+        left: 0;
+        right: 0;
+    }
+    nav.show ul li {
+        margin: 0;
+        padding: 30px;
+        display: block;
+        background: #000;
+        height: 4em;
+        min-width: 100vw;
+        text-align: center;
+        border-bottom: 1px solid #202020;
+    }
+    nav.show ul li:first-child {
+        padding-top: 40px;
+    }
+    nav.show ul li a {
+        width: 100%;
     }
     .fa-bars {
         visibility: visible;
@@ -721,21 +747,49 @@ footer {
     header h1 {
         font-size: 5em;
         top: 40%;
+        left: 50%;
     }
     hr {
-        top: 60%;
+        min-width: 50%;
+        top: 55%;
+        left: 50%;
     }
     header h2 {
-        margin-top: 5%;
+        margin-top: 1%;
+        left: 50%;
     }
     nav span {
+        padding: 0;
+        margin-left: 0;
         visibility: visible;
     }
+    .sec-4 {
+        display: flex;
+        align-items: stretch;
+    }
     .card {
+        display: block;
+        position: relative;
         margin-right: 10px;
     }
-    .filter-card h4 {
-        text-align: center;
+    .card h4 {
+        position: absolute;
+        left: 12%;
+    }
+    .card hr {
+        left: 36%;
+    }
+    .card-1 ul {
+        position: absolute;
+        left: 48%;
+    }
+    .card-2 ul {
+        position: absolute;
+        left: 43%;
+    }
+    .orderBtn {
+        position: absolute;
+        right: 50%;
     }
     .sec-6 {
         flex-direction: column;

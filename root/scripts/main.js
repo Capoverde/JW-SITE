@@ -10,6 +10,14 @@ $(function () {
             $("nav").removeClass("shadow");
         }
     });
+
+    $('.toggler').on('click', function (e) {
+        e.preventDefault();
+        $('nav').toggleClass('show');
+        $("nav").css("background", "black");
+    });
+
+
     // smooth scrol to sections
     $('nav li:nth-child(1)').on('click', function (e) {
         e.preventDefault();
