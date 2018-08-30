@@ -533,7 +533,7 @@ h3 {
 
 .sec-5 form {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
@@ -548,6 +548,7 @@ h3 {
 .sec-5 form input {
     padding: 10px 15px 5px;
     width: 400px;
+    font-size: 20px;
     background: transparent;
     border-style: none;
     border-bottom: 1px solid #dddddd;
@@ -556,7 +557,7 @@ h3 {
 }
 
 .sec-5 form input::placeholder {
-    color: #dddddd;
+    color: #ffffff;
     font-family: 'Quicksand';
     font-weight: 300;
     font-size: 18px;
@@ -570,6 +571,11 @@ h3 {
 #myFile2 {
     border-style: none;
     color: red;
+    font-size: 16px;
+}
+
+#myFile1 {
+    margin-left: 24px;
 }
 
 #translate,
@@ -610,7 +616,7 @@ span {
 
 #send-btn {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     right: 20%;
     transform: translate(-50%, -50%);
     cursor: pointer;
