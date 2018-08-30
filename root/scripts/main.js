@@ -13,10 +13,13 @@ $(function () {
 
     $('.toggler').on('click', function (e) {
         e.preventDefault();
-        $('nav').toggleClass('show');
-        $("nav").css("background", "black");
+        $('nav').toggleClass('mobile toggle');
+        $("nav .mobile").css("background", "black");
     });
 
+    $('ul li').on('click', function () {
+        $('nav').toggleClass('show');
+    })
 
     // smooth scrol to sections
     $('nav li:nth-child(1)').on('click', function (e) {

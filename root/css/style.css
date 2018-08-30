@@ -705,6 +705,14 @@ footer {
     background-color: rgba(0, 0, 0, 0.904);
 }
 
+nav.mobile {
+    visibility: hidden;
+}
+
+.toggle {
+    visibility: visible;
+}
+
 /* ********************************************* | RWD | ********************************************************************* */
 
 @media screen and (max-width: 990px) {
@@ -716,16 +724,23 @@ footer {
         display: none;
         transition: 1s;
     }
-    nav.show {
+    nav.mobile {
         z-index: 100000;
         min-width: 100vw;
         background-color: #000;
-    }
-    nav.show ul {
         left: 0;
         right: 0;
     }
-    nav.show ul li {
+    nav.mobile .container {
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    nav.mobile ul {
+        margin-top: 40px;
+        left: 0;
+        right: 0;
+    }
+    nav.mobile ul li {
         margin: 0;
         padding: 30px;
         display: block;
@@ -735,14 +750,20 @@ footer {
         text-align: center;
         border-bottom: 1px solid #202020;
     }
-    nav.show ul li:first-child {
+    nav.mobile ul li:first-child {
         padding-top: 40px;
     }
-    nav.show ul li a {
+    nav.mobile ul li a {
         width: 100%;
+    }
+    nav.mobile .fa-facebook {
+        visibility: visible;
     }
     .fa-bars {
         visibility: visible;
+    }
+    .fa-bars:hover {
+        color: red;
     }
     header h1 {
         font-size: 5em;
@@ -759,6 +780,7 @@ footer {
         left: 50%;
     }
     nav span {
+        font-size: 20px;
         padding: 0;
         margin-left: 0;
         visibility: visible;
