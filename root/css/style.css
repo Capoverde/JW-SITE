@@ -601,11 +601,16 @@ textarea {
     min-width: 900px;
     min-height: 300px;
     padding: 20px;
-    font-size: 20f px;
+    font-size: 20px;
     color: #dddddd;
     font-family: 'Quicksand';
     overflow: scroll;
     outline-color: var(--hero-c);
+}
+
+textarea::placeholder {
+    font-size: 20px;
+    color: #dddddd;
 }
 
 span {
